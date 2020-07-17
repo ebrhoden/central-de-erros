@@ -23,4 +23,4 @@ Backend - API
 Para saber mais sobre o projeto, acesse:
 ++++++++++++++++++++++++++++++++++++++++
 
-:ref:`Documentação sobre o código <account_doc>`
+:ref:`Documentação sobre a API <swagger>`

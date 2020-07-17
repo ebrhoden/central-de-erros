@@ -14,12 +14,20 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('../'))
 
+print(sys.path)
+
+
+
 
 # Particularidades do Django
-from core.core import settings
 
+#os.environ['DJANGO_SETTINGS_MODULE'] = 'settings'
+#import django
+#django.setup()
+
+from django.conf import settings
+settings.configure()
 import django
-os.environ['DJANGO_SETTINGS_MODULE'] = 'core.core.settings'
 django.setup()
 
 

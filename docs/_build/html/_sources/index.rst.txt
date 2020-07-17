@@ -11,6 +11,5 @@ Bem vindo a documentacao da Central-de-Erros!
    :caption: Conteúdo:
 
    pages/about
-   pages/account_doc
    pages/swagger
 

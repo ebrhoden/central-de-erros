@@ -8,16 +8,8 @@ basePath: "/v2"
 tags:
 - name: "log"
   description: "Endpoints de Log"
-  externalDocs:
-    description: "Find out more"
-    url: "http://swagger.io"
-- name: "store"
-  description: "Access to Petstore orders"
 - name: "user"
   description: "Operations about user"
-  externalDocs:
-    description: "Find out more about our store"
-    url: "http://swagger.io"
 schemes:
 - "https"
 - "http"
@@ -209,7 +201,7 @@ paths:
         default:
           description: "successful operation"
   /account/login:
-    get:
+    post:
       tags:
       - "user"
       summary: "Loga o usuário no sistema"
@@ -219,7 +211,7 @@ paths:
       - "application/json"
       parameters:
       - name: "email"
-        in: "query"
+        in: "body"
         description: "The email for login"
         required: true
         type: "string"
@@ -266,7 +258,6 @@ definitions:
       last_login:
         type: "string"
         format: "date-time"
-        
   UserCreated:
     type: "object"
     properties:
@@ -299,7 +290,6 @@ definitions:
         format: "email"
       password:
         type: "string"
-  
   Log:
     type: "object"
     required:
