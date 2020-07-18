@@ -8,3 +8,7 @@ DATABASES = {
 }
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+MIDDLEWARE.append('whitenoise.middleware.WhiteNoiseMiddleware')
+
+STATIC_FILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
